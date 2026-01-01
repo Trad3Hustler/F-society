@@ -36,7 +36,7 @@ cd F-society
 5. Rendre le script exécutable (si nécessaire) :
 
 ```bash
-chmod +x Fsociety.sh
+chmod +x F-society.sh
 ```
 
 ---
@@ -46,7 +46,7 @@ chmod +x Fsociety.sh
 Lancer le script :
 
 ```bash
-bash Fsociety.sh
+bash F-society.sh
 ```
 
 ---
