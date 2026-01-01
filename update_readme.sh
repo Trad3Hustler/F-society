@@ -1,80 +1,72 @@
-#!/bin/bash
+p#!/data/data/com.termux/files/usr/bin/bash
 
-# Aller dans le dossier du projet
-cd ~/F-society || { echo "Dossier ~/F-society introuvable"; exit 1; }
+# Dossier du projet
+PROJECT_DIR=~/F-society
+cd $PROJECT_DIR || { echo "Dossier $PROJECT_DIR introuvable !"; exit 1; }
 
-# Supprimer l'ancien README si présent
-rm -f README.md
-
-# Créer le nouveau README complet
-cat <<EOL > README.md
-# F-society
-
+# Remplacer README.md avec le nouveau texte
+cat > README.md << 'EOF'
+Société F
 Fsociety.sh - Mon script pour Termux.
 
----
-
-## Description
-
-Ce projet contient un script Termux appelé \`Fsociety.sh\`.  
+Description
+Ce projet contient un script Termux appelé Fsociety.sh.
 Il automatise certaines tâches pratiques sur Termux.
 
----
+Installation
+Installer Termux (si ce n'est pas déjà fait) depuis le Play Store ou F-Droid.
 
-## Installation
+Ouvrez Termux et mettez à jour les paquets, puis installez Git :
 
-1. Installer Termux (si ce n’est pas déjà fait) depuis le Play Store ou F-Droid.  
-
-2. Ouvrir Termux et mettre à jour les paquets, puis installer Git :
-
-\`\`\`bash
 pkg update && pkg install git -y
-\`\`\`
-
-3. Cloner le dépôt :
-
-\`\`\`bash
+Cloner le dépôt :
 git clone https://github.com/Trad3Hustler/F-society.git
-\`\`\`
-
-4. Aller dans le dossier du projet :
-
-\`\`\`bash
+Aller dans le dossier du projet :
 cd F-society
-\`\`\`
-
-5. Rendre le script exécutable (si nécessaire) :
-
-\`\`\`bash
+Rendre le script exécutable (si nécessaire) :
 chmod +x F-society.sh
-\`\`\`
-
----
-
-## Utilisation
-
+Utilisation
 Lancer le script :
 
-\`\`\`bash
 bash F-society.sh
-\`\`\`
-
----
-
-## Contribution
-
+Contribution
 Les contributions sont les bienvenues !
 
----
+Changelog F-society (v1.1 --> v1.4)
 
-## License
+### 🟡 v1.1
+- ASCII art remplacé par un banner rouge multi-lignes
+- Lignes "=============================================" en jaune
+- "by anonymous.dos" en vert
+- Option 0 quitte proprement
+- Menu plus esthétique
 
+### 🟠 v1.2
+- Menu en boucle : retour automatique au menu après chaque option
+- Option 1 : affiche l’IP puis propose de revenir au menu
+- Gestion des choix invalides : retourne au menu
+
+### 🔵 v1.3
+- Option 2 (Discord) ouvre automatiquement le lien sur Termux
+- Compatible iSH (iOS) : affiche le lien à copier si ouverture automatique non disponible
+- Menu et couleurs conservés
+
+### 🔴 v1.4 🎭
+- Script multi-shell complet (Termux + iSH)
+- Menu infini avec retour automatique
+- Option 1 : affiche IP + retour menu
+- Option 2 : Discord auto sur Termux, affiche lien sur iSH
+- Option 0 : quitte proprement
+- Couleurs et ASCII art conservés
+- Tag version v1.4 créé
+
+Licence
 MIT
-EOL
+EOF
 
-# Ajouter le README à Git, créer le commit et pousser sur GitHub
+# Ajouter, commit et push
 git add README.md
-git commit -m "Ajout README complet avec installation"
-git push -u origin main --force
+git commit -m "Mise à jour du README avec changelog v1.1 → v1.4"
+git push origin main
 
-echo "README mis à jour et poussé sur GitHub ✅"
+echo "README.md mis à jour et poussé sur GitHub !"
