@@ -1,0 +1,80 @@
+#!/bin/bash
+
+# Aller dans le dossier du projet
+cd ~/F-society || { echo "Dossier ~/F-society introuvable"; exit 1; }
+
+# Supprimer l'ancien README si présent
+rm -f README.md
+
+# Créer le nouveau README complet
+cat <<EOL > README.md
+# F-society
+
+Fsociety.sh - Mon script pour Termux.
+
+---
+
+## Description
+
+Ce projet contient un script Termux appelé \`Fsociety.sh\`.  
+Il automatise certaines tâches pratiques sur Termux.
+
+---
+
+## Installation
+
+1. Installer Termux (si ce n’est pas déjà fait) depuis le Play Store ou F-Droid.  
+
+2. Ouvrir Termux et mettre à jour les paquets, puis installer Git :
+
+\`\`\`bash
+pkg update && pkg install git -y
+\`\`\`
+
+3. Cloner le dépôt :
+
+\`\`\`bash
+git clone https://github.com/Trad3Hustler/F-society.git
+\`\`\`
+
+4. Aller dans le dossier du projet :
+
+\`\`\`bash
+cd F-society
+\`\`\`
+
+5. Rendre le script exécutable (si nécessaire) :
+
+\`\`\`bash
+chmod +x F-society.sh
+\`\`\`
+
+---
+
+## Utilisation
+
+Lancer le script :
+
+\`\`\`bash
+bash F-society.sh
+\`\`\`
+
+---
+
+## Contribution
+
+Les contributions sont les bienvenues !
+
+---
+
+## License
+
+MIT
+EOL
+
+# Ajouter le README à Git, créer le commit et pousser sur GitHub
+git add README.md
+git commit -m "Ajout README complet avec installation"
+git push -u origin main --force
+
+echo "README mis à jour et poussé sur GitHub ✅"
