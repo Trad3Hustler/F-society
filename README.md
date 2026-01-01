@@ -13,27 +13,47 @@ Il automatise certaines tâches pratiques sur Termux.
 
 ## Installation
 
-Cloner le dépôt sur Termux:
+1. Installer Termux (si ce n’est pas déjà fait) depuis le Play Store ou F-Droid.  
+
+2. Ouvrir Termux et mettre à jour les paquets, puis installer Git :
+
+```bash
+pkg update && pkg install git -y
+```
+
+3. Cloner le dépôt :
 
 ```bash
 git clone https://github.com/Trad3Hustler/F-society.git
+```
+
+4. Aller dans le dossier du projet :
+
+```bash
+cd F-society
+```
+
+5. Rendre le script exécutable (si nécessaire) :
+
+```bash
+chmod +x Fsociety.sh
 ```
 
 ---
 
 ## Utilisation
 
-Lancer le script:
+Lancer le script :
 
 ```bash
-bash F-society/Fsociety.sh
+bash Fsociety.sh
 ```
 
 ---
 
 ## Contribution
 
-Les contributions sont les bienvenues!
+Les contributions sont les bienvenues !
 
 ---
 
