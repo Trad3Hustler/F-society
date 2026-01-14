@@ -108,7 +108,8 @@ Fork le projet et fais un pull request avec tes améliorations.
   - Affiche date de création, âge du compte, worker ID, process ID, increment
 - Code plus propre et structuré
 - Améliorations de la navigation et de la compatibilité Termux
-🟤 v2.0🔥
+
+### 🟤 v2.0🔥
 -Refonte et ajouts majeurs du script F-society.sh.
 -Nouveautés :
 -Ajout de l’indication de version V2 sous le logo
