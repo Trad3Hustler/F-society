@@ -110,31 +110,31 @@ Fork le projet et fais un pull request avec tes améliorations.
 - Améliorations de la navigation et de la compatibilité Termux
 
 ### 🟤 v2.0🔥
--Refonte et ajouts majeurs du script F-society.sh.
--Nouveautés :
--Ajout de l’indication de version V2 sous le logo
--Menu aligné en 3 colonnes pour une meilleure lisibilité
--Nettoyage de l’affichage (suppression des bugs de couleurs et textes trop longs)
--Suppression du branding inutile pour un rendu plus propre
--Option 4 renommée en DISCORD ID (OSINT retiré du titre)
--Nouvelles options :
--PHONE LOOKUP (+33)
--Analyse basique d’un numéro français avec affichage des informations publiques possibles
--Les données sensibles non accessibles sont affichées comme Unknown
--USERNAME OSINT
--Vérification réelle de l’existence d’un username sur : GitHub, Instagram, Twitter et TikTok
--Si le compte existe, le lien est affiché
--Si le compte n’existe pas, NOT FOUND est affiché
--Utilisation d’un User-Agent réel pour éviter les faux résultats
--EMAIL OSINT
--Fonctionne avec tous les fournisseurs courants : Gmail, Live, Outlook, Hotmail, Yahoo, etc.
--Affiche le domaine, le fournisseur et les enregistrements MX si disponibles
--FAKE ID
--Génération d’une fausse identité cohérente à partir d’un prénom et d’un nom
--Âge aléatoire entre 12 et 20 ans
--Numéro de téléphone commençant toujours par +33
--Username généré automatiquement (jamais NOT FOUND)
--Email cohérent avec le username
+
+- Refonte et ajouts majeurs du script F-society.sh
+- Ajout de l’indication de version V2 sous le logo
+- Menu aligné en 3 colonnes pour une meilleure lisibilité
+- Nettoyage de l’affichage (suppression des bugs de couleurs et textes trop longs)
+- Suppression du branding inutile pour un rendu plus propre
+- Option 4 renommée en DISCORD ID (OSINT retiré du titre)
+- Nouvelles options :
+- PHONE LOOKUP (+33)
+- Analyse basique d’un numéro français avec affichage des informations publiques possibles
+- Les données sensibles non accessibles sont affichées comme Unknown
+- USERNAME OSINT
+- Vérification réelle de l’existence d’un username sur : GitHub, Instagram, Twitter et TikTok
+- Si le compte existe, le lien est affiché
+- Si le compte n’existe pas, NOT FOUND est affiché
+- Utilisation d’un User-Agent réel pour éviter les faux résultats
+- EMAIL OSINT
+- Fonctionne avec tous les fournisseurs courants : Gmail, Live, Outlook, Hotmail, Yahoo, etc.
+- Affiche le domaine, le fournisseur et les enregistrements MX si disponibles
+- FAKE ID
+- Génération d’une fausse identité cohérente à partir d’un prénom et d’un nom
+- Âge aléatoire entre 12 et 20 ans
+- Numéro de téléphone commençant toujours par +33
+- Username généré automatiquement (jamais NOT FOUND)
+- Email cohérent avec le username
 ---
 
 ## Licence
